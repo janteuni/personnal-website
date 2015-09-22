@@ -1,0 +1,23 @@
+.FunnyLink {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  &:hover {
+    .line {
+      background: $dark-cream;
+    }
+  }
+  .children {
+    position: relative;
+    z-index: 1;
+  }
+  .line {
+    position: absolute;
+    top: .4em;
+    left: .3em;
+    right: -3px;
+    bottom: -3px;
+    z-index: 0;
+    background: $cream;
+  }
+}

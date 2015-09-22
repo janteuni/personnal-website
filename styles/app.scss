@@ -1,8 +1,60 @@
 @import '../fonts/ico/style.css';
+@import './variables.scss';
+@import './FunnyLink.scss';
+
+::selection { background: rgba($cream, .5); }
+::-moz-selection { background: rgba($cream, .5); }
 
 * {
   box-sizing: border-box;
   font: inherit;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: $bg;
+  color: $light-dark;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.summary {
+  color: $dark;
+  font-size: 2rem;
+  em {
+    font-style: italic;
+  }
+  .strike {
+    text-decoration: line-through;
+  }
+  margin: 4rem 0 7rem 0;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+  p {
+    line-height: 1.5rem
+  }
+  p + p {
+    margin-top: 2rem;
+  }
 }
