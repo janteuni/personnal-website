@@ -1,5 +1,6 @@
 import React from 'react';
 import FunnyLink from './FunnyLink.js';
+import Modal from './Modal.js';
 import '../styles/app.scss';
 
 export default class App extends React.Component {
@@ -11,6 +12,7 @@ export default class App extends React.Component {
   render () {
     return (
       <div className='App'>
+      <Modal />
       <header><h1><FunnyLink>Jasmine Anteunis</FunnyLink></h1></header>
       <section className='summary'>
         <h2>I’m a 23 years old french<br />

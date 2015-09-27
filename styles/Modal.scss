@@ -1,0 +1,38 @@
+.Modal-overlay {
+  background: rgba(black, .5);
+  padding: 5rem;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  z-index: 2;
+  .ion-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.Modal {
+  background-color: white;
+  border-radius: 6px;
+  padding: 1rem;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:600px) {
+  .Modal-overlay {
+    padding: 0;
+  }
+  .Modal {
+    border-radius: 0;
+    width: 100%;
+  }
+}
