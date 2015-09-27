@@ -20,7 +20,7 @@ export default class Modal extends React.Component {
       .to(close, 0.25, { opacity: 1, x: 0 });
   }
 
-  componentDidUnmount () {
+  componentWillUnmount () {
     document.body.style.overflowY = 'auto';
   }
 
