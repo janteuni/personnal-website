@@ -1,24 +1,55 @@
 import React from 'react';
 import FunnyLink from './FunnyLink.js';
 import Modal from './Modal.js';
+import SocksModal from './modals/SocksModal.js';
 import '../styles/app.scss';
 
 export default class App extends React.Component {
 
   constructor (props) {
     super(props);
+    this.state = {
+      modal: false,
+      modalContent: null
+    };
+  }
+
+  closeModal () {
+    this.setState({
+      modal: false,
+      modalContent: null
+    });
+  }
+
+  openModal (component) {
+    this.setState({
+      modal: true,
+      modalContent: component
+    });
   }
 
   render () {
     return (
       <div className='App'>
-      <Modal />
-      <header><h1><FunnyLink>Jasmine Anteunis</FunnyLink></h1></header>
+
+      {this.state.modal && (
+        <Modal component={this.state.modalContent} onClose={::this.closeModal}/>
+      )}
+
+      <header>
+        <h1>
+          <FunnyLink onClick={this.openModal.bind(this, <SocksModal />)}>
+            Jasmine Anteunis
+          </FunnyLink>
+        </h1>
+      </header>
+
       <section className='summary'>
         <h2>I’m a 23 years old french<br />
         <span className='strike'>Art student</span> <em>Fullstack Developer</em><br />
         based in Paris.</h2>
       </section>
+
       <section className='description'>
         <p>
           I like designing things.<br />
@@ -34,6 +65,7 @@ export default class App extends React.Component {
           I like collecting things, and I never throw anything, this requires research and organisation to keep all these inpirations sources around me.  And I really like my socks, my cactus and all my Sci-Fi books.
         </p>
       </section>
+
       </div>
     );
   }

@@ -8,7 +8,7 @@ export default class FunnyLink extends React.Component {
 
   render () {
     return (
-      <span className='FunnyLink'>
+      <span className='FunnyLink' onClick={this.props.onClick}>
         <span className='line'></span>
         <span className='children'>{this.props.children}</span>
       </span>
