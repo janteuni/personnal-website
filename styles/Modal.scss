@@ -14,6 +14,7 @@
     right: 1rem;
     cursor: pointer;
     color: rgba(white, .7);
+    z-index: 3;
     &:hover {
       color: white;
     }
@@ -26,14 +27,24 @@
   padding: 1rem;
   max-width: 920px;
   margin: 0 auto;
+  img {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width:600px) {
   .Modal-overlay {
     padding: 0;
+    .ion-close {
+      color: rgba(black, 0.7);
+      &:hover {
+        color: black;
+      }
+    }
   }
   .Modal {
     border-radius: 0;
     width: 100%;
+    min-height: 100%;
   }
 }

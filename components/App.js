@@ -2,6 +2,7 @@ import React from 'react';
 import FunnyLink from './FunnyLink.js';
 import Modal from './Modal.js';
 import SocksModal from './modals/SocksModal.js';
+import PlantsModal from './modals/PlantsModal.js';
 import '../styles/app.scss';
 
 export default class App extends React.Component {
@@ -62,7 +63,7 @@ export default class App extends React.Component {
         </p>
         <p>
           I am passionate about paper craft, it’s a great medium and  joined my taste for the creation of a product that you master all aspects of the design. Graphic design, publishing, bookbinding and serigraphy are my hobby.
-          I like collecting things, and I never throw anything, this requires research and organisation to keep all these inpirations sources around me.  And I really like my socks, my cactus and all my Sci-Fi books.
+          I like collecting things, and I never throw anything, this requires research and organisation to keep all these inpirations sources around me.  And I really like my socks, <FunnyLink onClick={this.openModal.bind(this, <PlantsModal />)}>my cactus</FunnyLink> and all my Sci-Fi books.
         </p>
       </section>
 
