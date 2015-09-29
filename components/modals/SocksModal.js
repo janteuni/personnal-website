@@ -9,7 +9,7 @@ export default class SocksModal extends React.Component {
   render () {
     return (
       <div className='SocksModal'>
-      ihzefiuhbzifbze
+        <img src='images/socks/socks.jpg' />
       </div>
     );
   }
