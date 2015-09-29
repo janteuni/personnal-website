@@ -3,6 +3,7 @@ import FunnyLink from './FunnyLink.js';
 import Modal from './Modal.js';
 import SocksModal from './modals/SocksModal.js';
 import PlantsModal from './modals/PlantsModal.js';
+import OvallModal from './modals/OvallModal.js';
 import '../styles/app.scss';
 
 export default class App extends React.Component {
@@ -54,7 +55,7 @@ export default class App extends React.Component {
       <section className='description'>
         <p>
           I like designing things.<br />
-          Between my studies in <FunnyLink>Art school</FunnyLink> in Aix-en-Provence and 42 in Paris, only the medium has changed. After an artistic residence in Portugal, collective exhibitions, I launched <FunnyLink>a clothing brand</FunnyLink> with a friend. My first project management experience, but also my first website.
+          Between my studies in <FunnyLink>Art school</FunnyLink> in Aix-en-Provence and 42 in Paris, only the medium has changed. After an artistic residence in Portugal, collective exhibitions, I launched <FunnyLink onClick={this.openModal.bind(this, <OvallModal />)}>a clothing brand</FunnyLink> with a friend. My first project management experience, but also my first website.
         </p>
         <p>
           I’m now in my last year of study at 42 in Paris. A school where you learn to learn, especially to code.
