@@ -22,21 +22,21 @@ export default class PlantsModal extends React.Component {
         </div>
         <div className='row'>
           <div className='col'>
+            <img src='images/plantes/3.jpg' />
+          </div>
+          <div className='col'>
+            <img src='images/plantes/4.jpg' />
+          </div>
+          <div className='col'>
             <img src='images/plantes/5.jpg' />
-          </div>
-          <div className='col'>
-            <img src='images/plantes/6.jpg' />
-          </div>
-          <div className='col'>
-            <img src='images/plantes/7.jpg' />
           </div>
         </div>
         <div className='row'>
-          <div className='col'>
-            <img src='images/plantes/8.jpg' />
+          <div className='col-def'>
+            <img src='images/plantes/6.jpg' />
           </div>
-          <div className='col col-2'>
-            <img src='images/plantes/9.jpg' />
+          <div className='col-def'>
+            <img src='images/plantes/7.jpg' />
           </div>
         </div>
       </div>

@@ -28,6 +28,9 @@ img {
 
 .row {
   display: flex;
+  .col-def {
+    padding: 2px;
+  }
   .col {
     flex: 1;
     flex-shrink: 0;
