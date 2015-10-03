@@ -30,6 +30,17 @@
   img {
     max-width: 100%;
   }
+  h3 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+  p {
+    line-height: 2rem;
+  }
+  em {
+    font-weight: 900;
+  }
 }
 
 @media screen and (max-width:600px) {

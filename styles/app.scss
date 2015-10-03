@@ -3,6 +3,9 @@
 @import './FunnyLink.scss';
 @import './Modal.scss';
 
+@import url(https://fonts.googleapis.com/css?family=Cabin:400,500italic);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
+
 ::selection { background: rgba($cream, .5); }
 ::-moz-selection { background: rgba($cream, .5); }
 
@@ -20,10 +23,15 @@ html {
 body {
   background-color: $bg;
   color: $light-dark;
+  font-family: 'Libre Baskerville', serif;
 }
 
 img {
   display: block;
+}
+
+.marged-top {
+  margin-top: 3rem;
 }
 
 .row {
@@ -57,6 +65,7 @@ header {
 }
 
 .summary {
+  font-family: 'Cabin', sans-serif;
   color: $dark;
   font-size: 2rem;
   em {
@@ -72,7 +81,7 @@ header {
   max-width: 600px;
   margin: 0 auto;
   p {
-    line-height: 1.5rem
+    line-height: 2rem
   }
   p + p {
     margin-top: 2rem;

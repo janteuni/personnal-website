@@ -9,9 +9,6 @@ export default class PlantsModal extends React.Component {
   render () {
     return (
       <div className='PlantsModal'>
-        <h1>
-          My Cactus and Plants
-        </h1>
         <div className='row'>
           <div className='col'>
             <img src='images/plantes/1.jpg' />

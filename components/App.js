@@ -4,6 +4,7 @@ import Modal from './Modal.js';
 import SocksModal from './modals/SocksModal.js';
 import PlantsModal from './modals/PlantsModal.js';
 import OvallModal from './modals/OvallModal.js';
+import DanoneModal from './modals/DanoneModal.js';
 import '../styles/app.scss';
 
 export default class App extends React.Component {
@@ -59,12 +60,13 @@ export default class App extends React.Component {
         </p>
         <p>
           I’m now in my last year of study at 42 in Paris. A school where you learn to learn, especially to code.
-          After the success of a Hackathon a small team was able to develop <FunnyLink>a project</FunnyLink> at Danone. I was in charge of UX and Web design of the application.
-          I’m currently working at Beamind in Paris as UX Designer.
+          After the success of a Hackathon a small team was able to develop <FunnyLink onClick={this.openModal.bind(this, <DanoneModal />)}>a project</FunnyLink> at Danone. I was in charge of UX and Web design of the application.
+          I’m currently working at Recast in Paris as UX Designer.
         </p>
         <p>
           I am passionate about paper craft, it’s a great medium and  joined my taste for the creation of a product that you master all aspects of the design. Graphic design, publishing, bookbinding and serigraphy are my hobby.
-          I like collecting things, and I never throw anything, this requires research and organisation to keep all these inpirations sources around me.  And I really like <FunnyLink onClick={this.openModal.bind(this, <SocksModal />)}>my socks</FunnyLink>, <FunnyLink onClick={this.openModal.bind(this, <PlantsModal />)}>my cactus</FunnyLink> and all my Sci-Fi books.
+          I like collecting things, and I never throw anything, this requires research and organisation to keep all these inpirations sources around me.
+          <br/>And I really like <FunnyLink onClick={this.openModal.bind(this, <SocksModal />)}>my socks</FunnyLink>, <FunnyLink onClick={this.openModal.bind(this, <PlantsModal />)}>my cactus</FunnyLink> and all my Sci-Fi books.
         </p>
       </section>
 

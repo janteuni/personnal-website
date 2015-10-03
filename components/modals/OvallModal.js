@@ -9,6 +9,9 @@ export default class OvallClass extends React.Component {
   render () {
     return (
       <div className='OvallClass'>
+        <h3>Ovall</h3>
+        <p></p>
+        <a href='http://www.ovall.fr'>view the website</a>
         <div className='row'>
           <div className='col'>
             <img src='images/ovall/banner.jpg' />
