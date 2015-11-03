@@ -9,65 +9,65 @@ export default class DanoneModal extends React.Component {
   render () {
     return (
       <div className='DanoneModal'>
-        <p>
-          <em>Insider by Danone</em> is an app to connect external candidates interested in Danone company and Danoners, based on areas of common interests. Danoners will also be able to connect among each other.
-        </p>
-        <p>
-          The team was composed by 4 students from Ecole 42, IT & HR Danoners. We work for 5 months to design this app and the beta version will be launched soon!
-        </p>
-        <p>
-          You can see here some flows to help define the user journeys, illustrations and screenshots.
-        </p>
-        <a href="http://insider.danone.com/" target=""_blank>view the webapp</a>
-        <div className="row">
-          <div className="col">
-            <img src="images/danone/insider-6.jpg" alt="Insider by Danone"/>
+        <div className="row md-wrap align-end">
+          <div className='col-def card'>
+            <h1 className='title mb2'>
+              Insider by Danone
+            </h1>
+            <p>
+              An app to connect external candidates interested in Danone company and Danoners, based on areas of common interests. Danoners will also be able to connect among each other.
+            </p>
+            <p>
+              The team was composed by 4 students from Ecole 42, IT & HR Danoners. We work for 5 months to design this app and the beta version will be launched soon!
+            </p>
+            <p>
+              You can see here some flows to help define the user journeys, illustrations and screenshots.
+            </p>
+             <a href="http://insider.danone.com/" target="_blank">view the webapp</a>
+          </div>
+          <div className="col-def">
+            <img src="images/danone/insider-danone-jasmine-anteunis-6.jpg" alt="Insider by Danone"/>
           </div>
         </div>
         <div className="row">
           <div className="col">
-            <img src="images/danone/insider-5.jpg" alt="Insider by Danone"/>
-          </div>
-        </div>
-        <div className="row marged-top">
-          <div className="col">
-            <img src="images/danone/insider-9.jpg" alt="Insider by Danone"/>
+            <img src="images/danone/insider-danone-jasmine-anteunis-5.jpg" alt="Insider by Danone"/>
           </div>
         </div>
         <div className="row">
-          <div className="col">
-            <img src="images/danone/insider-8.jpg" alt="Insider by Danone"/>
+          <div className="col-def">
+            <img src="images/danone/insider-danone-jasmine-anteunis-9.jpg" alt="Insider by Danone"/>
           </div>
         </div>
         <div className="row">
-          <div className="col">
-            <img src="images/danone/ob-1.jpg" alt="Onboarding for Insider by Danone"/>
-          </div>
-          <div className="col">
-            <img src="images/danone/ob-3.jpg" alt="Onboarding for Insider by Danone"/>
-          </div>
-          <div className="col">
-            <img src="images/danone/ob-2.jpg" alt="Onboarding for Insider by Danone"/>
+          <div className="col-def">
+            <img src="images/danone/insider-danone-jasmine-anteunis-8.jpg" alt="Insider by Danone"/>
           </div>
         </div>
-        <div className="row marged-top">
+        <div className="row sm-wrap">
           <div className="col">
-            <img src="images/danone/insider-1.jpg" alt="Insider by Danone"/>
+            <img src="images/danone/onboarding-animation-jasmine-anteunis-1.jpg" alt="Onboarding for Insider by Danone"/>
           </div>
           <div className="col">
-            <img src="images/danone/insider-3.jpg" alt="Insider by Danone"/>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col">
-            <img src="images/danone/insider-2.jpg" alt="Insider by Danone"/>
+            <img src="images/danone/onboarding-animation-jasmine-anteunis-3.jpg" alt="Onboarding for Insider by Danone"/>
           </div>
           <div className="col">
-            <img src="images/danone/insider-4.jpg" alt="Insider by Danone"/>
+            <img src="images/danone/onboarding-animation-jasmine-anteunis-2.jpg" alt="Onboarding for Insider by Danone"/>
           </div>
         </div>
-        <div className="row row-center bg-blue p3">
-          <img src="images/danone/insider-2.jpg" alt="Insider by Danone"/>
+        <div className="row row-center row-wrap bg-blue p2">
+          <div className="m2">
+            <img src="images/danone/insider-danone-jasmine-anteunis-1.png" alt="Insider by Danone"/>
+          </div>
+          <div className="m2">
+            <img src="images/danone/insider-danone-jasmine-anteunis-3.png" alt="Insider by Danone"/>
+          </div>
+          <div className="m2">
+            <img src="images/danone/insider-danone-jasmine-anteunis-2.png" alt="Insider by Danone"/>
+          </div>
+          <div className="m2">
+            <img src="images/danone/insider-danone-jasmine-anteunis-4.png" alt="Insider by Danone"/>
+          </div>
         </div>
       </div>
     );
