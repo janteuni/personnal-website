@@ -1,6 +1,5 @@
 .Modal-overlay {
-  background: rgba(black, .5);
-  padding: 5rem;
+  background: rgba(black, .8);
   overflow-y: auto;
   position: fixed;
   top: 0;
@@ -9,7 +8,7 @@
   bottom:0;
   z-index: 2;
   .ion-close {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
     cursor: pointer;
@@ -22,10 +21,9 @@
 }
 
 .Modal {
-  background-color: white;
-  border-radius: 6px;
   padding: 1rem;
-  max-width: 920px;
+  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
   img {
     max-width: 100%;
@@ -54,7 +52,7 @@
     }
   }
   .Modal {
-    border-radius: 0;
+    padding: 0;
     width: 100%;
     min-height: 100%;
   }

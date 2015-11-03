@@ -34,19 +34,83 @@ img {
   margin-top: 3rem;
 }
 
+.p3 {
+  padding: 3rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+}
+
 .row {
   display: flex;
+  &.row-wrap {
+    flex-wrap: wrap;
+  }
+  &.row-column {
+    flex-direction: column;
+  }
+  &.row-end {
+    justify-content: flex-end;
+  }
+  &.row-center {
+    justify-content: center;
+    align-items: center;
+  }
   .col-def {
-    padding: 2px;
+    margin: 5px;
   }
   .col {
     flex: 1;
     flex-shrink: 0;
-    padding: 2px;
+    margin: 5px;
   }
   .col-2 {
     flex: 2;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    .col-def {
+      margin: 0;
+    }
+    .col {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .row {
+    &.sm-wrap {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bg-blue {
+  background-color: #b3b1fc;
+}
+
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  color: #616161;
+  min-width: 200px;
+}
+
+.std-size {
+  max-width: 876px;
 }
 
 .App {

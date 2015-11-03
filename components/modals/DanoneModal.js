@@ -66,6 +66,9 @@ export default class DanoneModal extends React.Component {
             <img src="images/danone/insider-4.jpg" alt="Insider by Danone"/>
           </div>
         </div>
+        <div className="row row-center bg-blue p3">
+          <img src="images/danone/insider-2.jpg" alt="Insider by Danone"/>
+        </div>
       </div>
     );
   }
