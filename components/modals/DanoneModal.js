@@ -1,4 +1,5 @@
 import React from 'react';
+import ExternalLink from '../ExternalLink.js'
 
 export default class DanoneModal extends React.Component {
 
@@ -23,7 +24,7 @@ export default class DanoneModal extends React.Component {
             <p>
               You can see here some flows to help define the user journeys, illustrations and screenshots.
             </p>
-             <a href="http://insider.danone.com/" target="_blank">view the webapp</a>
+              <ExternalLink link={'http://insider.danone.com'}>view the web app</ExternalLink>
           </div>
           <div className="col-def">
             <img src="images/danone/insider-danone-jasmine-anteunis-6.jpg" alt="Insider by Danone"/>

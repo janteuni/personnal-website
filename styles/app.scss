@@ -1,6 +1,7 @@
 @import '../fonts/ico/style.css';
 @import './variables.scss';
 @import './FunnyLink.scss';
+@import './ExternalLink.scss';
 @import './Modal.scss';
 
 @import url(https://fonts.googleapis.com/css?family=Cabin:400,500italic);
@@ -131,6 +132,9 @@ img {
   padding: 2rem;
   color: #616161;
   min-width: 300px;
+  .ExternalLink + .ExternalLink {
+    margin-top: 8px;
+  }
 }
 
 .std-size {

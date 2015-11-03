@@ -1,10 +1,12 @@
 import React from 'react';
 import FunnyLink from './FunnyLink.js';
+import ExternalLink from './ExternalLink.js';
 import Modal from './Modal.js';
 import SocksModal from './modals/SocksModal.js';
 import PlantsModal from './modals/PlantsModal.js';
 import OvallModal from './modals/OvallModal.js';
 import DanoneModal from './modals/DanoneModal.js';
+import ArtModal from './modals/ArtModal.js';
 import '../styles/app.scss';
 
 export default class App extends React.Component {
@@ -56,12 +58,12 @@ export default class App extends React.Component {
       <section className='description'>
         <p>
           I like designing things.<br />
-          Between my studies in <FunnyLink>Art school</FunnyLink> in Aix-en-Provence and 42 in Paris, only the medium has changed. After an artistic residence in Portugal, collective exhibitions, I launched <FunnyLink onClick={this.openModal.bind(this, <OvallModal />)}>a clothing brand</FunnyLink> with a friend. My first project management experience, but also my first website.
+          Between my studies in <FunnyLink onClick={this.openModal.bind(this, <ArtModal />)}>Art school</FunnyLink> in Aix-en-Provence and 42 in Paris, only the medium has changed. After an artistic residence in Portugal, collective exhibitions, I launched <FunnyLink onClick={this.openModal.bind(this, <OvallModal />)}>a clothing brand</FunnyLink> with a friend. My first project management experience, but also my first website.
         </p>
         <p>
           I’m now in my last year of study at 42 in Paris. A school where you learn to learn, especially to code.
           After the success of a Hackathon a small team was able to develop <FunnyLink onClick={this.openModal.bind(this, <DanoneModal />)}>a project</FunnyLink> at Danone. I was in charge of UX and Web design of the application.
-          I’m currently working at Recast in Paris as UX Designer.
+          I’m currently working at <ExternalLink link='https://recast.ai'>Recast.AI</ExternalLink> in Paris as UX Designer.
         </p>
         <p>
           I am passionate about paper craft, it’s a great medium and  joined my taste for the creation of a product that you master all aspects of the design. Graphic design, publishing, bookbinding and serigraphy are my hobby.
