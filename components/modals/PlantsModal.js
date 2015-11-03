@@ -9,11 +9,11 @@ export default class PlantsModal extends React.Component {
   render () {
     return (
       <div className='PlantsModal'>
-        <div className='row'>
-          <div className='col'>
+        <div className='row row-end sm-wrap'>
+          <div className='col-def'>
             <img src='images/plantes/1.jpg' />
           </div>
-          <div className='col'>
+          <div className='col-def'>
             <img src='images/plantes/2.jpg' />
           </div>
         </div>
