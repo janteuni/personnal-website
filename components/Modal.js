@@ -29,15 +29,18 @@ export default class Modal extends React.Component {
     this.props.onClose();
   }
 
-  stopPropagation (e) {
+  handleClick (e) {
     e.stopPropagation();
+    if (e.target.parentNode.parentNode === React.findDOMNode(this.refs.modal)) {
+      this.props.onClose();
+    }
   }
 
   render () {
     return (
-      <div className='Modal-overlay' onClick={::this.handleClose} ref='overlay'>
+      <div className='Modal-overlay' onClick={::this.handleClick} ref='overlay'>
         <i className='ion-close' onClick={::this.handleClose} ref='close' />
-        <div className='Modal' onClick={::this.stopPropagation} ref='modal'>
+        <div className='Modal' ref='modal'>
           {this.props.component}
         </div>
       </div>

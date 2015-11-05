@@ -19,7 +19,8 @@ export default class OvallClass extends React.Component {
           <div className="col card std-size">
             <h3>Ovall</h3>
             <p>
-              I’m now in my last year of study at 42 in Paris. A school where you learn to learn, especially to code. After the success of a Hackathon a small team was able to develop a project at Danone.
+              Ovall created from forgotten clothes and jewelry, unique pieces.<br />
+              A two-year experiment on the creation of a brand identity, design clothes and website, communication and collaboration.
               <br /><ExternalLink link='http://www.ovall.fr'>view the website</ExternalLink>
             </p>
           </div>
