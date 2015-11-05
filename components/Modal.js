@@ -6,6 +6,10 @@ export default class Modal extends React.Component {
     super(props);
   }
 
+  componentWillMount () {
+    document.addEventListener('keydown', ::this.handleKeydown);
+  }
+
   componentDidMount () {
     document.body.style.overflowY = 'hidden';
     const overlay = React.findDOMNode(this.refs.overlay);
@@ -22,6 +26,14 @@ export default class Modal extends React.Component {
 
   componentWillUnmount () {
     document.body.style.overflowY = 'auto';
+    document.removeEventListener('keydown', ::this.handleKeydown);
+  }
+
+  handleKeydown (e) {
+    e.preventDefault();
+    if (e.which === 27) {
+      this.props.onClose();
+    }
   }
 
   handleClose (e) {
