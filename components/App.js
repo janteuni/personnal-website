@@ -43,9 +43,7 @@ export default class App extends React.Component {
 
       <header>
         <h1>
-          <FunnyLink>
-            Jasmine Anteunis
-          </FunnyLink>
+          Jasmine Anteunis
         </h1>
       </header>
 
