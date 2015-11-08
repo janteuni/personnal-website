@@ -1,13 +1,14 @@
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
+var StatsWriterPlugin = require('webpack-stats-plugin').StatsWriterPlugin;
 
 module.exports = {
 
   entry   : './index.js',
   output : {
     path: path.join(__dirname, './dist'),
-    filename : 'bundle.js'
+    filename : 'bundle-[hash].js'
   },
 
   module : {
@@ -38,11 +39,18 @@ module.exports = {
   },
 
   plugins: [
-    new ExtractTextPlugin('style.css'),
+    new ExtractTextPlugin('style-[hash].css'),
 
     // optimizations
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({ compressor: { warnings: false } }),
+    // write stats
+    new StatsWriterPlugin({
+      transform: data => JSON.stringify({
+        main: data.assetsByChunkName.main[0],
+        style: data.assetsByChunkName.main[1]
+      })
+    })
   ]
 };

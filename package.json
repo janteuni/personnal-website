@@ -29,6 +29,7 @@
     "extract-text-webpack-plugin": "^0.9.1",
     "gsap": "^1.18.0",
     "lodash": "^3.10.1",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "webpack-stats-plugin": "^0.1.1"
   }
 }
