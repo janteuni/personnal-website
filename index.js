@@ -3,4 +3,4 @@ import App from './components/App';
 import 'gsap';
 import './styles/app.scss';
 
-React.render(<App />, document.body);
+React.render(<App />, document.getElementById('root'));

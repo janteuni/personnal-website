@@ -34,6 +34,14 @@ module.exports = {
         loader: 'url?limit=100000'
       }
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        ISBROWSER: JSON.stringify(true)
+      }
+    })
+  ],
 
 };

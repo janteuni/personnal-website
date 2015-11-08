@@ -7,7 +7,10 @@ import PlantsModal from './modals/PlantsModal.js';
 import OvallModal from './modals/OvallModal.js';
 import DanoneModal from './modals/DanoneModal.js';
 import ArtModal from './modals/ArtModal.js';
-import '../styles/app.scss';
+
+if (process.env.ISBROWSER) {
+  require('../styles/app.scss');
+}
 
 export default class App extends React.Component {
 

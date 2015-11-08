@@ -5,7 +5,8 @@
   "author": "Jasmine Anteunis",
   "scripts": {
     "start": "webpack-dev-server --devtool eval-source --progress --colors --hot --inline --history-api-fallback --silent",
-    "build": "webpack --progress --colors"
+    "build": "webpack --config webpack.config.prod.js --progress --colors",
+    "prod": "babel-node server"
   },
   "license": "MIT",
   "devDependencies": {
@@ -22,6 +23,10 @@
     "webpack-dev-server": "^1.10.1"
   },
   "dependencies": {
+    "babel": "^5.8.29",
+    "compression": "^1.6.0",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^0.9.1",
     "gsap": "^1.18.0",
     "lodash": "^3.10.1",
     "react": "^0.13.3"
