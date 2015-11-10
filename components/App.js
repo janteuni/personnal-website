@@ -49,13 +49,13 @@ export default class App extends React.Component {
           <h1>
             Jasmine Anteunis
           </h1>
-          <p className="right">
+          <h3 className="right">
             <a href="https://github.com/janteuni" className="i-link" target="_blank"><i className="icon-github"></i></a>
             <a href="https://dribbble.com/janteuni" className="i-link" target="_blank"><i className="icon-dribbble3"></i></a>
             <a href="https://www.behance.net/janteuni" className="i-link" target="_blank"><i className="icon-behance"></i></a>
             <a href="https://twitter.com/JasmineAnteunis" className="i-link" target="_blank"><i className="icon-twitter"></i></a>
             <a href="https://www.linkedin.com/in/janteuni" className="i-link" target="_blank"><i className="icon-linkedin"></i></a>
-          </p>
+          </h3>
         </div>
       </header>
 
