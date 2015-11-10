@@ -76,7 +76,7 @@ export default class App extends React.Component {
           I’m currently working at <ExternalLink link='https://recast.ai'>Recast.AI</ExternalLink> in Paris as UX Designer.
         </p>
         <p>
-          I am passionate about paper craft, it’s a great medium and  joined my taste for the creation of a product that you master all aspects of the design. Graphic design, publishing, bookbinding and serigraphy are my hobby.
+          I am passionate about paper craft, it’s a great medium and joined my taste for the creation of a product that you master all aspects of the design. Graphic design, publishing, bookbinding and serigraphy are my hobby.
           I like collecting things, and I never throw anything, this requires research and organisation to keep all these inpirations sources around me.
           <br/>And I really like <FunnyLink onClick={this.openModal.bind(this, <SocksModal />)}>my socks</FunnyLink>, <FunnyLink onClick={this.openModal.bind(this, <PlantsModal />)}>my cactus</FunnyLink> and all my Sci-Fi books.
         </p>
