@@ -55,7 +55,7 @@ module.exports = {
     // write stats
     new StatsWriterPlugin({
       transform: function (data) {
-          JSON.stringify({
+        return JSON.stringify({
           main: data.assetsByChunkName.main[0],
           style: data.assetsByChunkName.main[1]
         })
