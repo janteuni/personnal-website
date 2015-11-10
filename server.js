@@ -9,6 +9,8 @@ var server = express();
 server.use(compression())
 server.use('/dist', express.static('./dist'))
 server.use('/images', express.static('./images'))
+server.use('/robots.txt', function (req, res) { res.sendfile('./robots.txt'); })
+server.use('/sitemap.xml', function (req, res) { res.sendfile('./sitemap.xml'); })
 
 server.use(function (req, res) {
 
