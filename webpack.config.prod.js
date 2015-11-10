@@ -54,10 +54,12 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({ compressor: { warnings: false } }),
     // write stats
     new StatsWriterPlugin({
-      transform: data => JSON.stringify({
-        main: data.assetsByChunkName.main[0],
-        style: data.assetsByChunkName.main[1]
-      })
+      transform: function (data) {
+          JSON.stringify({
+          main: data.assetsByChunkName.main[0],
+          style: data.assetsByChunkName.main[1]
+        })
+      }
     })
   ]
 };

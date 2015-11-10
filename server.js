@@ -33,6 +33,13 @@ server.use(function (req, res) {
     <meta name="google-site-verification" content="BbzNckXFr2J26I9oTwvIpKcz4KhC2JI9RtmrP8QXEXI" />
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="http://jasmine.anteunis.name"/>
+
+    <link rel="shortcut icon" href="images/favicon/favicon-32.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon/favicon-32.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicon/favicon-32.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon-152.png">
     <link href="dist/${style}" rel="stylesheet"/>
   </head>
   <body>
