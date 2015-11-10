@@ -1,3 +1,6 @@
+import githubhook from 'githubhook'
+import { spawn } from 'child_process'
+
 var express = require('express');
 var compression = require('compression');
 var React = require('react');
@@ -56,3 +59,21 @@ const port = process.env.PORT || 8080
 server.listen(port, function () {
   console.log(`> Running on port ${port}`);
 })
+
+// GITHUB HOOK
+
+const github = githubhook({
+  port: 3421,
+  path: '/build',
+  secret: process.env.HOOK_SECRET
+})
+
+github.on('push', (event, ref) => {
+  if (ref === 'refs/heads/master') {
+    spawn('sh', ['bin/deploy.sh'], {
+      cwd: __dirname
+    })
+  }
+})
+
+github.listen()
