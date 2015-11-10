@@ -5,7 +5,7 @@
   "author": "Jasmine Anteunis",
   "scripts": {
     "start": "webpack-dev-server --devtool eval-source --progress --colors --hot --inline --history-api-fallback --silent",
-    "build": "webpack --config webpack.config.prod.js --progress --colors",
+    "build": "rm -rf dist && webpack --config webpack.config.prod.js --progress --colors",
     "prod": "babel-node server"
   },
   "license": "MIT",

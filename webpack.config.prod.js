@@ -41,6 +41,13 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('style-[hash].css'),
 
+    new webpack.DefinePlugin({
+      'process.env': {
+        ISBROWSER: JSON.stringify(true),
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
+
     // optimizations
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
