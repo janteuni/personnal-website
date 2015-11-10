@@ -16,24 +16,27 @@ server.use(function (req, res) {
   const style = Stats.style
   const bundle = Stats.main
 
-  res.send(`
-		<!doctype html>
-		<html>
-			<head>
-				<base href="/">
-				<meta charset="utf-8">
-				<title>App</title>
-        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-				<link href="dist/${style}" rel="stylesheet"/>
-			</head>
-			<body>
-				<div id="root">${rootHtml}</div>
-				<script src="dist/${bundle}"></script>
-			</body>
-		</html>
+  res.send(`<!doctype html>
+<html>
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>App</title>
+    <link href="dist/${style}" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="root">${rootHtml}</div>
+    <script async src="dist/${bundle}"></script>
+  </body>
+</html>
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
   `)
 })
 
-server.listen(8081, function () {
-  console.log('> Running on port 8081');
+const port = process.env.PORT || 8080
+
+server.listen(port, function () {
+  console.log(`> Running on port ${port}`);
 })
