@@ -17,12 +17,20 @@ server.use(function (req, res) {
   const bundle = Stats.main
 
   res.send(`<!doctype html>
-<html>
+<html xmlns:og="http://ogp.me/ns#">
   <head>
     <base href="/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>App</title>
+    <title>Jasmine Anteunis</title>
+    <meta property="og:title" content="Jasmine Anteunis" />
+    <meta property="og:type" content="I’m a 23 years old french Art student, Fullstack Developer, based in Paris." />
+    <meta property="og:url" content="http://jasmine.anteunis.name" />
+    <meta property="og:image" content="http://jasmine.anteunis.name/images/jasmine-anteunis.png" />
+    <meta name="description" content="Jasmine Anteunis - IT Student @42 - IT Development, UX Design, Graphic Design, Illustration">
+    <meta name="google-site-verification" content="BbzNckXFr2J26I9oTwvIpKcz4KhC2JI9RtmrP8QXEXI" />
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="http://jasmine.anteunis.name"/>
     <link href="dist/${style}" rel="stylesheet"/>
   </head>
   <body>
@@ -30,7 +38,6 @@ server.use(function (req, res) {
     <script async src="dist/${bundle}"></script>
   </body>
 </html>
-<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
   `)
 })
