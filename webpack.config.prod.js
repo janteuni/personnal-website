@@ -32,7 +32,7 @@ module.exports = {
 
       // load fonts
       {
-        test: /\.(woff|eot|svg|ttf|otf)$/,
+        test: /\.(woff|eot|svg|ttf|otf)\?.*$/,
         loader: 'url?limit=100000'
       }
     ]

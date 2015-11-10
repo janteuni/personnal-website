@@ -45,9 +45,18 @@ export default class App extends React.Component {
       )}
 
       <header>
-        <h1>
-          Jasmine Anteunis
-        </h1>
+        <div>
+          <h1>
+            Jasmine Anteunis
+          </h1>
+          <p className="right">
+            <a href="https://github.com/janteuni" className="i-link" target="_blank"><i className="icon-github"></i></a>
+            <a href="https://dribbble.com/janteuni" className="i-link" target="_blank"><i className="icon-dribbble3"></i></a>
+            <a href="https://www.behance.net/janteuni" className="i-link" target="_blank"><i className="icon-behance"></i></a>
+            <a href="https://twitter.com/JasmineAnteunis" className="i-link" target="_blank"><i className="icon-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/janteuni" className="i-link" target="_blank"><i className="icon-linkedin"></i></a>
+          </p>
+        </div>
       </header>
 
       <section className='summary'>
@@ -72,6 +81,11 @@ export default class App extends React.Component {
           <br/>And I really like <FunnyLink onClick={this.openModal.bind(this, <SocksModal />)}>my socks</FunnyLink>, <FunnyLink onClick={this.openModal.bind(this, <PlantsModal />)}>my cactus</FunnyLink> and all my Sci-Fi books.
         </p>
       </section>
+
+      <footer>
+        <img src="images/jasmine-anteunis.png" alt="Jasmine Anteunis - Say Hello!" />
+        <ExternalLink link="mailto:jasmine@anteunis.name">Say Hello!</ExternalLink>
+      </footer>
 
       </div>
     );
