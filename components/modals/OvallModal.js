@@ -11,12 +11,12 @@ export default class OvallClass extends React.Component {
     return (
       <div className='OvallClass'>
         <div className='row'>
-          <div className='col'>
+          <div className='col-def'>
             <img src='images/ovall/banner.jpg' />
           </div>
         </div>
         <div className='row'>
-          <div className="col card std-size">
+          <div className="col-def card std-size">
             <h3>Ovall</h3>
             <p>
               Ovall created from forgotten clothes and jewelry, unique pieces.<br />
