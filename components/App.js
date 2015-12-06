@@ -22,6 +22,62 @@ export default class App extends React.Component {
     };
   }
 
+  componentDidMount () {
+  	var images = [
+      'images/plantes/jasmine-anteunis-plants-1.jpg',
+      'images/plantes/jasmine-anteunis-cactus-2.jpg',
+      'images/plantes/jasmine-anteunis-plants-5.jpg',
+      'images/plantes/jasmine-anteunis-cactus-4.jpg',
+      'images/plantes/jasmine-anteunis-cactus-7.jpg',
+      'images/plantes/jasmine-anteunis-cactus-6.jpg',
+      'images/plantes/jasmine-anteunis-plants-3.jpg',
+      'images/ovall/10.jpg',
+      'images/ovall/12.jpg',
+      'images/ovall/banner.jpg',
+      'images/ovall/9.jpg',
+      'images/ovall/11.jpg',
+      'images/ovall/8.jpg',
+      'images/ovall/6.jpg',
+      'images/ovall/5.jpg',
+      'images/ovall/3.jpg',
+      'images/ovall/2.jpg',
+      'images/ovall/7.jpg',
+      'images/ovall/4.jpg',
+      'images/ovall/1.jpg',
+      'images/socks/jasmine-anteunis-collection-socks.jpg',
+      'images/art/jasmine-anteunis-pattern-6.jpg',
+      'images/art/jasmine-anteunis-edition-2.jpg',
+      'images/art/jasmine-anteunis-martens.jpg',
+      'images/art/jasmine-anteunis-pattern-4.jpg',
+      'images/art/jasmine-anteunis-spaceship.jpg',
+      'images/art/jasmine-anteunis-pattern-1.jpg',
+      'images/art/jasmine-anteunis-pattern-2.jpg',
+      'images/art/jasmine-anteunis-pattern-5.jpg',
+      'images/art/jasmine-anteunis-baroca-1.jpg',
+      'images/art/jasmine-anteunis-baroca-2.jpg',
+      'images/art/jasmine-anteunis-edition-3.jpg',
+      'images/art/jasmine-anteunis-edition-1.jpg',
+      'images/art/jasmine-anteunis-baroca-3.jpg',
+      'images/art/jasmine-anteunis-pattern-3.jpg',
+      'images/danone/insider-danone-jasmine-anteunis-6.jpg',
+      'images/danone/insider-danone-jasmine-anteunis-8.jpg',
+      'images/danone/insider-danone-jasmine-anteunis-3.png',
+      'images/danone/onboarding-animation-jasmine-anteunis-3.jpg',
+      'images/danone/insider-danone-jasmine-anteunis-9.jpg',
+      'images/danone/insider-danone-jasmine-anteunis-5.jpg',
+      'images/danone/insider-danone-jasmine-anteunis-1.png',
+      'images/danone/insider-danone-jasmine-anteunis-4.png',
+      'images/danone/onboarding-animation-jasmine-anteunis-1.jpg',
+      'images/danone/onboarding-animation-jasmine-anteunis-2.jpg',
+      'images/danone/insider-danone-jasmine-anteunis-2.png'
+    ];
+
+    images.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }
+
   closeModal () {
     this.setState({
       modal: false,

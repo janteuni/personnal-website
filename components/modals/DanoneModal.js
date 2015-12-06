@@ -31,7 +31,7 @@ export default class DanoneModal extends React.Component {
           </div>
         </div>
         <div className="row">
-          <div className="col">
+          <div className="col-def">
             <img src="images/danone/insider-danone-jasmine-anteunis-5.jpg" alt="Insider by Danone"/>
           </div>
         </div>

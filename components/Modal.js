@@ -51,7 +51,9 @@ export default class Modal extends React.Component {
   render () {
     return (
       <div className='Modal-overlay' onClick={::this.handleClick} ref='overlay'>
-        <i className='icon-cross' onClick={::this.handleClose} ref='close' />
+        <div className='corner' onClick={::this.handleClose}>
+          <i className='icon-cross' ref='close' />
+        </div>
         <div className='Modal' ref='modal'>
           {this.props.component}
         </div>
