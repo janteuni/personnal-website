@@ -116,8 +116,8 @@ export default class App extends React.Component {
       </header>
 
       <section className='summary'>
-        <h2>I’m a 23 years old french<br />
-        <span className='strike'>Art student</span> <em>Fullstack Developer</em><br />
+        <h2>I’m a 24 years old french<br />
+        <span className='strike'>Art student</span> <em>Creative Developer</em><br />
         based in Paris.</h2>
       </section>
 
