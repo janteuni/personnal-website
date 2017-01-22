@@ -116,7 +116,7 @@ export default class App extends React.Component {
       </header>
 
       <section className='summary'>
-        <h2>I’m a 24 years old french<br />
+        <h2>I’m a 25 years old french<br />
         <span className='strike'>Art student</span> <em>Creative Developer</em><br />
         based in Paris.</h2>
       </section>
@@ -124,12 +124,12 @@ export default class App extends React.Component {
       <section className='description'>
         <p>
           I like designing things.<br />
-          Between my studies in <FunnyLink onClick={this.openModal.bind(this, <ArtModal />)}>Art school</FunnyLink> in Aix-en-Provence and 42 in Paris, only the medium has changed. After an artistic residence in Portugal, collective exhibitions, I launched <FunnyLink onClick={this.openModal.bind(this, <OvallModal />)}>a clothing brand</FunnyLink> with a friend. My first project management experience, but also my first website.
+          My studies started in <FunnyLink onClick={this.openModal.bind(this, <ArtModal />)}>Art school</FunnyLink> and ended up at 42, a coding school in Paris. I never stopped creating things. After an exhibition in Portugal, I launched <FunnyLink onClick={this.openModal.bind(this, <OvallModal />)}>a clothing brand</FunnyLink> with a friend. My first project management experience, my first website, and also my first brand creation.
         </p>
         <p>
-          I’m now in my last year of study at 42 in Paris. A school where you learn to learn, especially to code.
-          After the success of a Hackathon a small team was able to develop <FunnyLink onClick={this.openModal.bind(this, <DanoneModal />)}>a project</FunnyLink> at Danone. I was in charge of UX and Web design of the application.
-          I’m currently working at <ExternalLink link='https://recast.ai'>Recast.AI</ExternalLink> in Paris as UX Designer.
+          During my last student year at 42, a school where you learn to learn, I was working on 
+          <FunnyLink onClick={this.openModal.bind(this, <DanoneModal />)}> a web app</FunnyLink> at Danone. I was in charge of UX and Web design.
+          Now, my adventure is <ExternalLink link='https://recast.ai'>Recast.AI</ExternalLink>, a startup that I co-founded one year ago, specialised in AI, NLP and chatbots.
         </p>
         <p>
           I am passionate about paper craft, it’s a great medium and joined my taste for the creation of a product that you master all aspects of the design. Graphic design, publishing, bookbinding and serigraphy are my hobby.
